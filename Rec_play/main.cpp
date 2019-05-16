@@ -28,7 +28,6 @@ int main() {
 	std::system("PAUSE");
 	std::cout << "start rec!" << std::endl;
 	alcCaptureStart(capture_device);
-
 	while (TRUE) {
 		ALint sample;
 		alcGetIntegerv(capture_device, ALC_CAPTURE_SAMPLES, sizeof(sample), &sample);
@@ -50,8 +49,8 @@ int main() {
 	alcCaptureStop(capture_device);
 	std::cout << "Stop Rec" << std::endl;
 
+	//txt‚É“f‚«o‚µ
 	std::ofstream opf("rec.txt");
-
 	for (int i=0; i < rec_data.size();i++) {
 		opf << rec_data[i];
 		opf << "\n";
