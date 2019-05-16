@@ -38,4 +38,5 @@ VS community 2017のVC++とOpenAL最新版を用いています．
 
 OpenAL 1.1 Specification and Reference —仕様書およびリファレンス—, 2019.05.16 閲覧  
 <http://www.memorize-being.net/releases/oal11spec-ja/index.html>  
+  
 チュートリアル形式で始めるOpenAL, 西山信行, 2014  <https://www.amazon.co.jp/dp/B00IKMYWCM/ref=cm_sw_r_tw_dp_U_x_HEr3CbGJ2TK7V>
