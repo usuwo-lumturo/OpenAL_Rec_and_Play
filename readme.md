@@ -1,33 +1,41 @@
-# OpenAL���g�����^�����Đ��v���O����
-## 1.�T�v
+﻿# OpenALを使った録音＆再生プログラム
+## 1.概要
 
-C++��OpenAL��p����rec�ƃ\���̍Đ����s���v���O�����ł��D
+C++とOpenALを用いてrecとソレの再生を行うプログラムです．
 
-�����mono�ł����^���ł��Ȃ��ł��D
+現状はmonoでしか録音できないです．
 
 
-## 2.��
+## 2.環境
 
-VS community 2017��VC++��OpenAL�ŐV�ł�p���Ă��܂��D
+VS community 2017のVC++とOpenAL最新版を用いています．
 
-## 3.����
+## 3.動作
 
-�r���h���āA�}�C�N�Ȃ�Ȃ�Ȃ��ڑ����A���s�t�@�C�����񂵂Ă��������D
+ビルドして、マイクなりなんなりを接続し、実行ファイルを回してください．
 
-### 3.1 �^��
+### 3.1 録音
 
-��ɘ^�����܂��D
+先に録音します．
 
-- �R�}���h�E�B���h�N����A�C�ӂ̃L�[���͂ɂ��^�����J�n���܂��D
+- コマンドウィンド起動後、任意のキー入力により録音を開始します．
 
-- �^�����~�߂�ꍇ�́ASpace�L�[���������ĉ������D
+- 録音を止める場合は、Spaceキーを押下して下さい．
 
-- �^�����~�܂�ƁwStop Rec�x�ƕ\������A�g�`�f�[�^��txt�ɓf���o���܂��D
+- 録音が止まると『Stop Rec』と表示され、波形データをtxtに吐き出します．
 
-	- wav�̏o�͂��o����l�ɍ���ύX����̂��ڕW�ł��D
+	- wavの出力を出来る様に今後変更するのが目標です．
 
-### 3.2 �Đ�
+### 3.2 再生
 
-- �Đ��́w�����L�[�������Ƙ^���������̂��Đ����܂��D�x�̌�ɔC�ӂ̃L�[����͂���ƍĐ�����܂��D
+- 再生は『何かキーを押すと録音したものを再生します．』の後に任意のキーを入力すると再生されます．
 
-- �Đ����I���ƁwFin�x�ƕ\������A�v���O�������I�����܂��D
+- 再生が終わると『Fin』と表示され、プログラムが終了します．
+
+
+
+## 4.参考文献
+
+[OpenAL 1.1 Specification and Reference —仕様書およびリファレンス—,2019.05.16 閲覧 http://www.memorize-being.net/releases/oal11spec-ja/index.html] <http://www.memorize-being.net/releases/oal11spec-ja/index.html>
+
+[チュートリアル形式で始めるOpenAL, 西山信行, 2014] <https://www.amazon.co.jp/dp/B00IKMYWCM/ref=cm_sw_r_tw_dp_U_x_HEr3CbGJ2TK7V>
